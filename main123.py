@@ -8,3 +8,5 @@ else:
     print("Ну и ладно")
 
 print("Ваше число это: ", a )
+
+b = print("Hello World")
