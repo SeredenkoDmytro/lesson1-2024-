@@ -1,19 +1,25 @@
+import datetime
+
+
 class  Character:
     name = ""
-    health = 100
-    damage = 1
-    defence = 0
-    intelligence = 10
-    agility = 10
+    birthday = 2010
+    grop = 1
+    ball = 8
 
-    def __init__(self, name, health, damage, defence, intelligence, agility):
+    def __init__(self, name, birthday, grop, ball):
         self.name = name
-        self.health = health
-        self.damage = damage
-        self.defence = defence
-        self.intelligence = intelligence
-        self.agility = agility
+        self.birthday = birthday
+        self.grop = grop
+        self.ball = ball
+
     def show_stats(self):
-        print(f" -- {self.name}--\n   HP:{self.health}\n"
-              f"   DMG:{self.damage}\n   DEF:{self.defence}\n"
-              f"   INT:{self.intelligence}\n" f"   AG:{self.agility}")
+        print(f" -- {self.name}--\n   Год рождения:{self.birthday}\n"
+              f"   Група:{self.grop}\n   Средний бал:{self.ball}\n")
+
+    def age(self):
+        current_year = datetime.date.today().year
+        return current_year - self.birthday
+
+    def show_age(self):
+        print(f"Студенту {self.age()} лет" )
