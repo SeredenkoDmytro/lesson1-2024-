@@ -23,3 +23,7 @@ class  Character:
 
     def show_age(self):
         print(f"Студенту {self.age()} лет" )
+
+    def __str__(self):
+        return f" -- {self.name}--\n   Год рождения:{self.birthday}\n" \
+              f"   Група:{self.grop}\n   Средний бал:{self.ball}\n"
