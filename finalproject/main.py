@@ -7,7 +7,7 @@ from exceptions import DeathError, DepressionError, BankruptcyError
 
 
 people = [
-    Person(name="Тарас", health=900, mood=100, money=70),
+    Person(name="Тарас", health=90, mood=100, money=70),
     Person(name="Марія", health=90, mood=70, money=50),
     Person(name="Петро", health=80, mood=60, money=40),
     Person(name="Андрiй", health=100, mood=40, money=60),
