@@ -22,6 +22,7 @@ actions = [
 ]
 
 
+
 def print_all_people(people):
     print("\nСтан усіх людей:")
     for person in people:
